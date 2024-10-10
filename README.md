@@ -3,7 +3,7 @@
 Este repositorio contiene el desarrollo del Trabajo Práctico Integrador para el curso de Visión por Computadora II, perteneciente a la Especialización en Inteligencia Artificial (CEIA) de la Facultad de Ingeniería de la Universidad de Buenos Aires (FIUBA). El objetivo principal de este trabajo es analizar y desarrollar distintos modelos de visión por computadora para detectar diversas afecciones dentales en radiografías panorámicas, tales como dientes impactados, endodoncia, caries, entre otras patologías.
 
 Integrantes:
-- Marco Joel Isidro (@marco....)
+- Marco Joel Isidro (marcojoelisidro@gmail.com)
 - Diego Sarina (sarinadiego@gmail.com)
 
 Estructura del Repositorio:
@@ -14,12 +14,10 @@ Estructura del Repositorio:
 │   ├── YOLOv8_training.ipynb      # Entrenamiento de YOLOv8
 │   ├── RetinaNet_training.ipynb   # Entrenamiento de RetinaNet
 │   ├── FasterRCNN_training.ipynb  # Entrenamiento de Faster R-CNN
-│   └── OtroModelo_training.ipynb  # Entrenamiento de otro modelo (pendiente)
 ├── results/                      # Gráficas y métricas obtenidas de los experimentos
 │   ├── yolo_results/             # Resultados del entrenamiento YOLOv8
 │   ├── retina_results/           # Resultados del entrenamiento RetinaNet
 │   ├── faster_rcnn_results/      # Resultados del entrenamiento Faster R-CNN
-│   └── otro_modelo_results/      # Resultados del otro modelo
 ├── slides/                       # Diapositivas de la presentación final
 │   └── Presentacion_TP.pptx      
 ├── src/                          # Código fuente del proyecto

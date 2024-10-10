@@ -1,0 +1,4 @@
+# Ignore dataset folder
+/datasets/
+
+poetry.lock
