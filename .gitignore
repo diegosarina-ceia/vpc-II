@@ -2,3 +2,4 @@
 /datasets/
 
 poetry.lock
+*.env
