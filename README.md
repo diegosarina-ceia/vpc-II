@@ -20,10 +20,6 @@ Estructura del Repositorio:
 │   ├── faster_rcnn_results/      # Resultados del entrenamiento Faster R-CNN
 ├── slides/                       # Diapositivas de la presentación final
 │   └── Presentacion_TP.pptx      
-├── src/                          # Código fuente del proyecto
-│   ├── augmentation.py           # Implementaciones de data augmentation
-│   ├── train.py                  # Script de entrenamiento común
-│   └── utils/                    # Utilidades para la gestión del dataset y métricas
 ├── poetry.env              # Lista de dependencias del proyecto
 └── README.md                     # Este archivo
 ```
