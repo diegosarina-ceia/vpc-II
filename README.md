@@ -55,7 +55,6 @@ Entrenamos al menos 4 modelos diferentes para abordar el problema de detección 
 - **YOLOv8**: Un modelo de detección de objetos eficiente y rápido.
 - **RetinaNet**: Un modelo diseñado para manejar la detección de objetos con un fuerte enfoque en objetos pequeños y medianos.
 - **Faster R-CNN**: Un modelo más robusto que ofrece alta precisión en la detección de objetos.
-- **[Otro modelo]**: Por ejemplo, EfficientDet o SSD para comparar desempeño.
 
 Cada modelo fue entrenado con distintos hiperparámetros y configuraciones que se detallan en los notebooks correspondientes.
 
@@ -63,15 +62,13 @@ Cada modelo fue entrenado con distintos hiperparámetros y configuraciones que s
 
 Se decidió utilizar Transfer Learning en algunos modelos para aprovechar pesos preentrenados en grandes datasets (e.g., COCO). Esto permitió obtener mejores resultados iniciales y acelerar el entrenamiento.
 
-- **Modelos con Transfer Learning**: YOLOv8, RetinaNet, Faster R-CNN.
-- **Modelos sin Transfer Learning**: [Especificar si aplica].
+- **Modelos con Transfer Learning**: YOLOv8, RetinaNet
 
 ## Data Augmentation
 
 El uso de Data Augmentation fue considerado debido a la posible limitación en la cantidad de imágenes etiquetadas.
 
 - **Data Augmentation utilizado**: Rotaciones, escalado, recortes aleatorios y flip horizontal.
-- **Justificación**: Aumentar la diversidad de los datos para mejorar la generalización de los modelos.
 
 ## Entrenamientos Realizados
 
@@ -80,16 +77,6 @@ Se realizaron múltiples entrenamientos, probando diferentes configuraciones de 
 - `YOLOv8_training.ipynb`
 - `RetinaNet_training.ipynb`
 - `FasterRCNN_training.ipynb`
-- `OtroModelo_training.ipynb`
-
-### Hiperparámetros utilizados
-
-| Modelo          | Epochs | Batch Size | Learning Rate | Otros Hiperparámetros     |
-|-----------------|--------|------------|---------------|---------------------------|
-| YOLOv8          | 50     | 16         | 0.001         | Augmentation X             |
-| RetinaNet       | 40     | 8          | 0.0001        | Scheduler Y                |
-| Faster R-CNN    | 60     | 4          | 0.005         | Backbone ResNet50          |
-| [Otro Modelo]   | X      | X          | X             | X                         |
 
 ## Resultados
 
@@ -101,37 +88,5 @@ Los resultados de los experimentos incluyen métricas como:
 
 Las gráficas y comparaciones están disponibles en el directorio `results/`.
 
-### Comparación de Modelos
-
-| Modelo          | mAP (%) | Precisión (%) | Recall (%) | Tiempo de Entrenamiento |
-|-----------------|---------|---------------|------------|-------------------------|
-| YOLOv8          | XX.XX   | XX.XX         | XX.XX      | XX horas                |
-| RetinaNet       | XX.XX   | XX.XX         | XX.XX      | XX horas                |
-| Faster R-CNN    | XX.XX   | XX.XX         | XX.XX      | XX horas                |
-| [Otro Modelo]   | XX.XX   | XX.XX         | XX.XX      | XX horas                |
-
-## Conclusiones
-
-- **YOLOv8** se destacó por su rapidez y precisión en comparación con otros modelos.
-- **RetinaNet** mostró mejor rendimiento para la detección de objetos más pequeños.
-- **Faster R-CNN** ofreció una mayor precisión general, aunque a costa de tiempos de entrenamiento más largos.
-- [Añadir conclusiones adicionales relacionadas con la generalización, el uso de Data Augmentation y Transfer Learning].
-
-## Requisitos
-
-Para reproducir los experimentos, instala las dependencias del proyecto:
-
-```bash
-pip install -r requirements.txt
-```
-
-
-### Uso
-Para entrenar un modelo, utiliza el script de entrenamiento con los parámetros deseados:
-
-```bash
-python src/train.py --model yolo --epochs 50 --batch_size 16
-```
-
 ### Diapositivas de la Presentación
-Las diapositivas para la presentación final están disponibles en slides/Presentacion_TP.pptx.
+Las diapositivas para la presentación final están disponibles en `slides/Presentacion_TP.pptx`.
