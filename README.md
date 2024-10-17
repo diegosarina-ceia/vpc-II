@@ -10,6 +10,7 @@ Estructura del Repositorio:
 
 ```
 ├── notebooks/                    # Notebooks con los experimentos y análisis
+│   ├── DesarrolloGeneral_Conclusiones.ipynb   # Explicación del proyecto
 │   ├── EDA.ipynb                 # Análisis exploratorio de datos
 │   ├── YOLOv8_training.ipynb      # Entrenamiento de YOLOv8
 │   ├── RetinaNet_training.ipynb   # Entrenamiento de RetinaNet
